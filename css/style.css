@@ -1,0 +1,200 @@
+figure {
+  position: relative;
+  display: inline-block;
+  
+}
+
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+figcaption {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.674);
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-align: center;
+  font-size: large;
+  font-style: italic;
+  color: #fff;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 95%;
+  justify-content: space-evenly;
+  row-gap: 10px;
+}
+
+.grid img {
+  width: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  text-align: center;
+  color: #000;
+  background-color: #fff;
+}
+
+html,
+body {
+  scroll-behavior: smooth;
+}
+
+footer {
+  text-align: center;
+  padding: 25px;
+  font-size: 25px;
+}
+
+footer a {
+  text-decoration: overline;
+  color: #000;
+  text-align: center;
+  padding: 20px;
+}
+
+footer a:hover {
+  color: #9c27b0;
+  font-weight: bold;
+}
+
+@media screen and (min-width: 772px) {
+  .grid {
+    grid-template-columns: 45% 45%;
+    align-items: center;
+  }
+  .grid img {
+    border-radius: 50%;
+  }
+  .grid figure {
+    border-radius: 50%;
+  }
+  figure:last-child {
+    grid-column: span 2;
+  }
+}
+
+@media screen and (min-width: 950px) {
+  .grid img {
+    border-radius: 0%;
+  }
+  figure:nth-child(3n) {
+    grid-column: span 2;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  div figure {
+    background-color: #1c1b1b;
+    color: rgba(29, 34, 17, 0.133);
+    border-color: #000;
+    background-color: #000;
+    color: #fff;
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  body {
+    scroll-behavior: smooth;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 
+main {
+    border: 5px #000 solid;
+    margin: 10px;
+}
+ */
+/* 
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+}
+ */
+/* img{
+    width: 200px;
+    height: 200px;
+    padding: 5px;
+} */
+
+/* .child {
+    position: relative;
+    display: inline-block;
+    border: 5px black solid;
+    margin: 5px;
+    border-radius: 5px;
+} */
+
+/* 
+
+.label {
+    display: none;
+    position: absolute;
+    top: 40%;
+    left: 40%;
+} */
+/* 
+.button {
+    display: inline-block;
+    border: 2px solid #000;
+    padding: 5px;
+    border-radius: 25px;
+}
+ */
+/* 
+.button:hover {
+    background-color:#fff;
+} */
+
+/* 
+footer {
+    display: flex;
+    justify-content: center;
+} */
+
+/* 
+header {
+    border-radius: 5px;
+    border: 5px #000 solid;
+    margin: 10px;
+} */
+
+/* 
+.label {
+    display: none;
+    position: absolute;
+    top: 40%;
+    left: 40%;
+} */
+/* 
+.child:hover .label {
+    display: block;
+} */
